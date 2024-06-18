@@ -1,0 +1,30 @@
+Whenever we have to fetch columnS from different table, we join 2 tables
+- We need to have a common column
+
+
+In inner join , we get matching rows
+
+SQL
+
+INNER JOIN
+
+SELECT Cust_ID, Sales, Email_id, Name
+FROM Transaction_table INNER JOIN Customer_Table
+ON Cust_id = ID
+
+
+LEFT JOIN
+
+We get all the rows from the left table and matching rows from right table
+
+SELECT Cust_ID, Sales, Email_id, Name
+FROM Transaction_table LEFT JOIN Customer_Table
+ON Cust_id = ID
+
+RIGHT JOIN
+
+We get all the rows from the RIGHT table and matching rows from LEFT table
+
+SELECT Cust_ID, Sales, Email_id, Name
+FROM Transaction_table RIGHT JOIN Customer_Table
+ON Cust_id = ID
